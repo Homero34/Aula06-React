@@ -20,6 +20,13 @@ export const File = () => {
        {id: 3,brand: 'Noites Estreladas', frase:'Eu leio'}
       ];
 
+      const foods = [
+        {id: 1,brand: 'Strogonoff' , frase:'Eu gosto de'},
+        {id: 1,brand: 'Hamburguer' , frase:'Eu gosto de'},
+        {id: 1,brand: 'Galinha no Quiabo' , frase:'Eu gosto de'}
+
+      ]
+
   return (
     <>
         <div>
@@ -32,7 +39,14 @@ export const File = () => {
         <div>
             <h1>Qual livro voce le?</h1>
             <ul>
-            {books.map((book) => <Propt key={book.id} brand={book.brand} frase={book.frase} />)}
+            {books.map((book) => <Propt key={book.id} brand={food.brand} frase={food.frase} />)}
+             </ul>
+        </div>
+
+        <div>
+            <h1>Qual livro voce le?</h1>
+            <ul>
+            {foods.map((food) => <Propt key={food.id} brand={book.brand} frase={book.frase} />)}
              </ul>
         </div>
 
