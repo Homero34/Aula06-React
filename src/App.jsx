@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { File } from './components/File'
+import { Propt } from './components/File'
 import { MyForm } from './components/Form'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <div>
-      <File/>
+      <Propt/>
       <MyForm/>
     </div>
     </>

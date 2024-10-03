@@ -1,14 +1,14 @@
 import React from 'react'
 import './File.css'
 
-function Propt(props) {
+export function Propt(props) {
     return <li> {props.frase} {props.brand} </li>;
     
   }
 
 
   
-export const File = () => {
+ const File = () => {
     const cars = [
         {id: 1, brand: 'Ford' , frase: 'Uma'},
         {id: 2, brand: 'BMW' , frase: 'Uma'},
