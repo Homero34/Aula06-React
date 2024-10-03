@@ -1,4 +1,5 @@
 import React from 'react'
+import './File.css'
 
 function Propt(props) {
     return <li> {props.frase} {props.brand} </li>;
@@ -39,14 +40,14 @@ export const File = () => {
         <div>
             <h1>Qual livro voce le?</h1>
             <ul>
-            {books.map((book) => <Propt key={book.id} brand={food.brand} frase={food.frase} />)}
+            {books.map((book) => <Propt key={book.id} brand={book.brand} frase={book.frase} />)}
              </ul>
         </div>
 
         <div>
-            <h1>Qual livro voce le?</h1>
+            <h1>Qual comida voce gosta?</h1>
             <ul>
-            {foods.map((food) => <Propt key={food.id} brand={book.brand} frase={book.frase} />)}
+            {foods.map((food) => <Propt key={food.id} brand={food.brand} frase={food.frase} />)}
              </ul>
         </div>
 
